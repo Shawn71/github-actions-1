@@ -24,3 +24,11 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           date
+  build_on_windows:
+    runs-on: windows-latest
+    steps:
+      - name: run a multi-line script
+        run: |
+          echo "hello github actions"
+          Get-Date
+    
