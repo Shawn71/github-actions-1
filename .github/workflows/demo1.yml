@@ -24,7 +24,7 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           date
-   build_in_windows:
+  build_in_windows:
      runs-on: windows-latest
      steps:
        - name: run multi-line script
