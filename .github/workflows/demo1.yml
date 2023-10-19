@@ -21,7 +21,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-          date
+          date1
   build_in_windows:
      runs-on: windows-latest
      steps:
