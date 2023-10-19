@@ -24,6 +24,8 @@ jobs:
           date1
   build_in_windows:
      runs-on: windows-latest
+     if: ${{success()}}
+     needs: [build_in_linux]
      steps:
        - name: run multi-line script
          run: |
