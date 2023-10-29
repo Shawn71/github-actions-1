@@ -5,7 +5,7 @@ on: workflow_dispatch
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   # This workflow contains a single job called "build"
-  build:
+  build_in_linux:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
 
@@ -20,3 +20,11 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+  build_in_windows:
+    runs-on: windows-latest
+    if: ${{sucess()}}
+    needs: [build_in_linux]
+    steps:
+      - name: run multiple-line script
+        run： |
+          echo "hello github actions"
