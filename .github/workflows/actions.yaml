@@ -1,10 +1,1 @@
-name: pytest
-on: workflow_dispatch
-jobs:
-  pytest:
-    runs-on: ubuntu-latest
-    steps:
-      - name: install pytest
-        run: pip install pytest
-      - name: run pytest
-        run： pytest 
+
