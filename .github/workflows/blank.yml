@@ -28,3 +28,4 @@ jobs:
       - name: run multiple-line script
         run： |
           echo "hello github actions"
+          echo "testing"
