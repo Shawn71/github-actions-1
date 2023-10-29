@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - master
-  workflow_dispatch:
+  #workflow_dispatch:
 jobs:
-  # This workflow contains a single job called "build"
+  #  workflow contains a single job called "build"
   build_in_linux:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
